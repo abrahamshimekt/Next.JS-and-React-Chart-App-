@@ -1,0 +1,9 @@
+POST https://exante-email-sender.onrender.com/api/send/
+
+{
+    "recipient_emails": [
+        "bisratwalle3@gmail.com"
+    ],
+    "subject": "EMD Fund Flow: Bad",
+    "html_content": "<br>\n  <div style=\"font-size: 14px; text-align: center; margin: 20px;\">Please check the files attached to find out more about our fund flow data, sample size and structure, and methodology.</div>\n  <br>"
+}

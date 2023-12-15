@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 3xl:px-0;
+  }
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .bold-40 {
+    @apply text-[20px] font-[700] leading-[120%];
+  }
+
+  .bold-64 {
+    @apply text-[44px] font-[700] leading-[120%];
+  }
+}
+
+:root {
+  /* Indigo */
+  --color-brand-50: #eff6ff;
+  --color-brand-100: #dbeafe;
+  --color-brand-200: #bfdbfe;
+  --color-brand-300: #93c5fd;
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+  --color-brand-800: #1e40af;
+  --color-brand-900: #1e3a8a;
+
+  /* Grey */
+  --color-grey-0: #fff;
+  --color-grey-50: #f9fafb;
+  --color-grey-100: #f3f4f6;
+  --color-grey-200: #e5e7eb;
+  --color-grey-300: #d1d5db;
+  --color-grey-400: #9ca3af;
+  --color-grey-500: #6b7280;
+  --color-grey-600: #4b5563;
+  --color-grey-700: #374151;
+  --color-grey-800: #1f2937;
+  --color-grey-900: #111827;
+
+  --color-blue-100: #e0f2fe;
+  --color-blue-700: #0369a1;
+  --color-green-100: #dcfce7;
+  --color-green-700: #15803d;
+  --color-yellow-100: #fef9c3;
+  --color-yellow-700: #a16207;
+  --color-silver-100: #e5e7eb;
+  --color-silver-700: #374151;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-700: #4338ca;
+
+  --color-red-100: #fee2e2;
+  --color-red-700: #b91c1c;
+  --color-red-800: #991b1b;
+
+  --primary-sidebar-bg: #0c1d27;
+  --primary-button-bg: #019cd2;
+  --secondary-button-bg: #f7f7f0;
+  --third-button-bg: #ccc;
+  --primary-button-hover: #019ad2d3;
+  --primary-border-color: #019ad2;
+  --text-color-1: #0000008c;
+  --text-color-2: #666;
+  --text-color-3: #55497D;
+
+
+
+
+  /* --button-bg-color: #019cd2 */
+
+  --backdrop-color: rgba(255, 255, 255, 0.1);
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
+
+  --border-radius-tiny: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 7px;
+  --border-radius-lg: 29px;
+}
+
+
+
+/* custom css for view data table*/
+
+.highcharts-data-table {
+  width: 850px;
+  overflow-x: scroll;
+}
+
+.highcharts-data-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: var(--color-grey-0);
+  max-width: 100%;
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th {
+  border: 1px solid silver;
+  padding: 0.5em;
+}
+
+.highcharts-data-table tr {
+  border-bottom: 1px solid silver;
+}
+
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background-color: #e2f0ff;
+}
+
+.highcharts-data-table thead tr:first-child {
+  background-color: #f0f0f0;
+}
+
+.highcharts-data-table caption {
+  text-align: left;
+  border-bottom: none;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.ql-editor {
+  min-height: 200px;
+  font-size: 15px;
+}
+
+
+
+.customModal {
+  box-shadow: none;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+}
+  
+  @keyframes customEnterOverlayAnimation {
+    0% {
+      transform: scale(0);
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+    100% {
+      transform: scale(1);
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+  @keyframes customLeaveOverlayAnimation {
+    0% {
+      transform: scale(1);
+      background-color: rgba(0, 0, 0, 0.04);
+
+      
+
+    }
+    100% {
+      transform: scale(0);
+      background-color: rgba(0, 0, 0, 0.04);
+
+      
+    }
+  }
+  
+  @keyframes customEnterModalAnimation {
+    0% {
+      transform: scale(0.2);
+      background-color: white;
+      box-shadow: none;
+
+    }
+    100% {
+      transform: scale(1);
+      background-color: white;
+      box-shadow: none;
+
+      
+    }
+  }
+  @keyframes customLeaveModalAnimation {
+    0% {
+      transform: scale(1);
+      background-color: white;
+      box-shadow: none;
+
+    }
+    100% {
+      transform: scale(0.2);
+      background-color: white;
+      box-shadow: none;
+
+    }
+  }
